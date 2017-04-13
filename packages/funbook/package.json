@@ -40,6 +40,9 @@
     "envs": [
       "jest"
     ],
+    "globals": [
+      "IS_SERVER"
+    ],
     "rules": {
       "unicorn/filename-case": 0
     }
