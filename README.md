@@ -1,38 +1,24 @@
-# funbook
+# funbook [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
-[![NPM version](https://img.shields.io/npm/v/funbook.svg?style=flat)](https://npmjs.com/package/funbook) [![NPM downloads](https://img.shields.io/npm/dm/funbook.svg?style=flat)](https://npmjs.com/package/funbook) [![CircleCI](https://circleci.com/gh/egoist/funbook/tree/master.svg?style=shield&circle-token=a7f1239868460a608d25e9d2c7644a4fb3532953)](https://circleci.com/gh/egoist/funbook/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+**FunBook** is tool for building static or universal website, it's perfect for writing books, novels, docs and blogs.
 
 ## Install
 
 ```bash
-yarn add funbook
+yarn global add funbook-cli 
+# or
+npm i -g funbook-cli
 ```
 
-## Usage
+## Support
 
-### With Webpack
+[Documentation](https://funbook.js.org)
 
-```js
-import FunBook from 'funbook'
+## Badges
 
-// Create a book
-const book = new FunBook({
-  title: 'My Awesome Book'
-})
-
-// Add a new chapter
-book.chapter({
-  title: 'Chapter 1',
-  content: 'This is the first chapter of my book!',
-  stories: [{
-    title: 'Story 1',
-    content: 'A chapter could contain multiple stories'
-  }]
-})
-
-// Open the book at #root element
-book.open('#root')
-```
+|package|version|downloads|build|
+|---|---|---|---|
+|funbook|[![NPM version](https://img.shields.io/npm/v/funbook.svg?style=flat)](https://npmjs.com/package/funbook)|[![NPM downloads](https://img.shields.io/npm/dm/funbook.svg?style=flat)](https://npmjs.com/package/funbook)|[![CircleCI](https://circleci.com/gh/egoist/funbook/tree/master.svg?style=shield&circle-token=a7f1239868460a608d25e9d2c7644a4fb3532953)](https://circleci.com/gh/egoist/funbook/tree/master)  |
 
 ## Contributing
 
