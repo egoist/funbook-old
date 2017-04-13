@@ -35,7 +35,7 @@
 
 <style scoped>
   .site-header {
-    padding: 50px 0;
+    padding: 50px 10px;
     margin: 0 auto;
     margin-bottom: 30px;
     max-width: 940px;
@@ -54,8 +54,11 @@
   .site-nav {
     display: flex;
     list-style: none;
+    padding-left: 0;
     li {
-      margin-left: 15px;
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
       a {
         color: #333;
         &:hover {
@@ -65,6 +68,14 @@
           font-weight: bold;
         }
       }
+    }
+  }
+</style>
+
+<style scoped>
+  @media screen and (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
     }
   }
 </style>
