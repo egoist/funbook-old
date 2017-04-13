@@ -1,0 +1,58 @@
+{
+  "name": "funbook",
+  "version": "0.0.0",
+  "description": "ready? write, publish",
+  "repository": {
+    "url": "egoist/funbook",
+    "type": "git"
+  },
+  "main": "dist/funbook.js",
+  "module": "src/index.js",
+  "jsnext:main": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "dev": "vbuild example/index.js -d",
+    "build": "vbuild src/index.js --format umd --module-name FunBook --filename.js funbook.js --filename.css funbook.css --no-html"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "eslint-config-vue-app": "^1.2.1",
+    "jest-cli": "^18.1.0",
+    "marked3": "^0.3.1",
+    "postcss-nested": "^1.0.0",
+    "vbuild": "^6.24.14",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "extends": "vue-app",
+    "extensions": [
+      "js",
+      "vue"
+    ],
+    "envs": [
+      "jest"
+    ],
+    "rules": {
+      "unicorn/filename-case": 0
+    }
+  },
+  "dependencies": {
+    "github-markdown-css": "^2.6.0",
+    "vue": "^2.2.6",
+    "vue-meta": "^0.5.6",
+    "vue-router": "^2.4.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-nested": {}
+    }
+  }
+}

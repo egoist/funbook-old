@@ -1,0 +1,14 @@
+.markdown-body {
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom: none;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+}
