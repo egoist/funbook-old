@@ -7,7 +7,7 @@ You can use the CDN version of FunBook, and it's probably the easiest to use Fun
 
 <body>
   <div id="root"><!-- where the app is mounted --></div>
-  <script src="https://unpkg.com/funbook/dist/funbook.js"><script>
+  <script src="https://unpkg.com/funbook/dist/funbook.js"></script>
   <script>
     const book = new FunBook.default({
       title: 'My First Book'
