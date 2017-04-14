@@ -53,10 +53,11 @@
       "jest"
     ],
     "globals": [
-      "__REAM__"
+      "__IS_REAM__"
     ],
     "rules": {
-      "unicorn/filename-case": 0
+      "unicorn/filename-case": 0,
+      "import/prefer-default-export": 0
     }
   },
   "dependencies": {
