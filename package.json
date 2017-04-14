@@ -35,13 +35,12 @@
   "devDependencies": {
     "eslint-config-rem": "^3.0.0",
     "eslint-config-vue-app": "^1.2.1",
-    "jest-cli": "^18.1.0",
+    "jest-cli": "^19.0.2",
     "marked3": "^0.3.1",
-    "postcss-nested": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vbuild": "^6.24.14",
-    "xo": "^0.17.1"
+    "vbuild": "^6.24.16",
+    "xo": "^0.18.1"
   },
   "xo": {
     "extends": "vue-app",
