@@ -3,7 +3,7 @@ import App from './components/App.vue'
 import createRouter from './router'
 import { getChapterSlug } from './utils'
 
-export default class Pen {
+export default class FunBook {
   constructor(config = {}) {
     this.chapters = []
     this.pages = []
