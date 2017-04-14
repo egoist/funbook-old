@@ -21,6 +21,29 @@ export default ({
     mode: routerMode
   })
 
+  const getComponent = (chapter, chapters) => {
+    return async () => {
+      if (typeof chapter.content === 'function') {
+        chapter.content = await chapter.content()
+        if (
+          typeof chapter.content === 'object' &&
+          !chapter.content.template &&
+          !chapter.content.render
+        ) {
+          // This is a markdown post
+          chapter.content = chapter.content.content
+        }
+      }
+
+      return {
+        functional: true,
+        render: h => h(Page, {
+          props: { chapter, chapters, config }
+        })
+      }
+    }
+  }
+
   const addChapters = (_chapters, parent) => {
     router.addRoutes(_chapters.map(chapter => {
       if (chapter.stories) {
@@ -28,8 +51,7 @@ export default ({
       }
       return {
         path: parent ? `/${parent.id}/${chapter.id}` : `/${chapter.id}`,
-        component: Page,
-        props: { chapter, chapters, config }
+        component: getComponent(chapter, chapters)
       }
     }))
   }
@@ -38,8 +60,7 @@ export default ({
     router.addRoutes(_pages.map(page => {
       return {
         path: page.path,
-        component: Page,
-        props: { chapter: page, chapters, config }
+        component: getComponent(page, chapters),
       }
     }))
   }

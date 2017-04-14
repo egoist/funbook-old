@@ -42,6 +42,9 @@ yarn add funbook
     title: 'Getting Started',
     id: 'getting-started',
     content: () => import('./getting-started.vue')
+  }, {
+    title: 'Use Markdown File',
+    content: () => import('./markdown-content.md')
   }]
 })
 
@@ -55,4 +58,4 @@ book.chapter({
   }
 })
 
-book.open('#app')
+export default book.open()

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './components/App.vue'
 import createRouter from './router'
-import { slugify } from './utils'
+import { getChapterSlug } from './utils'
 
 export default class Pen {
   constructor(config = {}) {
@@ -13,7 +13,11 @@ export default class Pen {
   chapter(chapter) {
     this.chapters.push({
       ...chapter,
-      id: chapter.id || slugify(chapter.title)
+      id: getChapterSlug(chapter),
+      stories: chapter.stories && chapter.stories.map(story => ({
+        ...story,
+        id: getChapterSlug(story)
+      }))
     })
     return this
   }

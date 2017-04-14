@@ -2397,6 +2397,12 @@ fresh@0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.0.tgz#f474ca5e6a9246d6fd8e0953cfa9b9c805afa78e"
 
+front-matter@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/front-matter/-/front-matter-2.1.2.tgz#f75983b9f2f413be658c93dfd7bd8ce4078f5cdb"
+  dependencies:
+    js-yaml "^3.4.6"
+
 fs-extra@^0.26.4:
   version "0.26.7"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-0.26.7.tgz#9ae1fdd94897798edab76d0918cf42d0c3184fa9"
@@ -3394,7 +3400,7 @@ js-types@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/js-types/-/js-types-1.0.0.tgz#d242e6494ed572ad3c92809fc8bed7f7687cbf03"
 
-js-yaml@^3.4.3, js-yaml@^3.5.1, js-yaml@^3.7.0:
+js-yaml@^3.4.3, js-yaml@^3.4.6, js-yaml@^3.5.1, js-yaml@^3.7.0:
   version "3.8.3"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.3.tgz#33a05ec481c850c8875929166fe1beb61c728766"
   dependencies:
@@ -3537,6 +3543,12 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+linkify-it@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/linkify-it/-/linkify-it-2.0.3.tgz#d94a4648f9b1c179d64fa97291268bdb6ce9434f"
+  dependencies:
+    uc.micro "^1.0.1"
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -3698,6 +3710,16 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+markdown-it@^8.3.0:
+  version "8.3.1"
+  resolved "https://registry.npmjs.org/markdown-it/-/markdown-it-8.3.1.tgz#2f4b622948ccdc193d66f3ca2d43125ac4ac7323"
+  dependencies:
+    argparse "^1.0.7"
+    entities "~1.1.1"
+    linkify-it "^2.0.0"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.3"
+
 marked3@^0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/marked3/-/marked3-0.3.1.tgz#8cfcca5a69cd70baf433d7632cc6d0dc6141c0e3"
@@ -3705,6 +3727,10 @@ marked3@^0.3.1:
 math-expression-evaluator@^1.2.14:
   version "1.2.16"
   resolved "https://registry.npmjs.org/math-expression-evaluator/-/math-expression-evaluator-1.2.16.tgz#b357fa1ca9faefb8e48d10c14ef2bcb2d9f0a7c9"
+
+mdurl@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -4287,6 +4313,14 @@ pluralize@^1.2.1:
 post-compile-webpack-plugin@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/post-compile-webpack-plugin/-/post-compile-webpack-plugin-0.1.1.tgz#1b1a0eea890ce748556ca49e066a48c900e0b370"
+
+post-loader@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/post-loader/-/post-loader-1.1.2.tgz#e5255f72a6c0ca2deaa5c8d644ba7f4edfaa5575"
+  dependencies:
+    front-matter "^2.1.2"
+    loader-utils "^1.0.2"
+    markdown-it "^8.3.0"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -5481,6 +5515,10 @@ type-is@~1.6.14:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+uc.micro@^1.0.1, uc.micro@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.3.tgz#7ed50d5e0f9a9fb0a573379259f2a77458d50192"
 
 uglify-js@^2.6, uglify-js@^2.8.5, uglify-js@~2.8.22:
   version "2.8.22"

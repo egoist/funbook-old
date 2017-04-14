@@ -10,3 +10,7 @@ export function slugify(input) {
     // Make the whole thing lowercase
     .toLowerCase()
 }
+
+export function getChapterSlug(chapter) {
+  return chapter.id || (chapter.title && slugify(chapter.title))
+}
