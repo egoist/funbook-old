@@ -18,6 +18,11 @@ CDN: [JS](https://unpkg.com/funbook/dist/funbook.js) / [CSS](https://unpkg.com/f
 
 [Documentation](https://funbook.js.org)
 
+## Projects using FunBook
+
+- [FunBook documentation](https://funbook.js.org) ([source](https://github.com/egoist/funbook/tree/master/docs))
+- Feel free to add yours here 💌
+
 ## Contributing
 
 1. Fork it!
