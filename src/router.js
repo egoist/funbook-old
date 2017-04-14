@@ -60,7 +60,7 @@ export default ({
     router.addRoutes(_pages.map(page => {
       return {
         path: page.path,
-        component: getComponent(page, chapters),
+        component: getComponent(page, chapters)
       }
     }))
   }
