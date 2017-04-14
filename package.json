@@ -41,6 +41,7 @@
     "jest-cli": "^19.0.2",
     "post-loader": "^1.1.2",
     "prismjs": "^1.6.0",
+    "ream": "beta",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vbuild": "^6.24.16",

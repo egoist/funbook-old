@@ -16,7 +16,7 @@ CDN: [JS](https://unpkg.com/funbook/dist/funbook.js) / [CSS](https://unpkg.com/f
 
 ## Support
 
-[Documentation](https://funbook.js.org)
+[Documentation](https://funbook.surge.sh)
 
 ## Contributing
 
