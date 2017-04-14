@@ -1,1 +1,4 @@
 * text=auto
+docs/* linguist-documentation
+*.vue linguist-vendored
+src/css/* linguist-vendored
