@@ -35,14 +35,14 @@ book.chapter({
 book.chapter({
   title: 'Advanced',
   stories: [{
-    title: 'Server-side Rendering',
-    content: () => import('./chapters/advanced/server-side-rendering.md')
-  }, {
     title: 'Use Markdown File',
     content: () => import('./chapters/advanced/use-markdown-file.md')
   }, {
     title: 'Use Vue Component',
     content: () => import('./chapters/advanced/use-vue-component.md')
+  }, {
+    title: 'Server-side Rendering',
+    content: () => import('./chapters/advanced/server-side-rendering.md')
   }]
 })
 
