@@ -21,7 +21,7 @@ You can use the CDN version of FunBook, and it's probably the easiest to use Fun
 </body>
 ```
 
-So far, you first FunBook is created! However nothing would be preset until you add the first chapter or page before `book.open()`:
+So far, you first FunBook is created! However nothing would be present until you add the first chapter or page before `book.open()`:
 
 ```js
 book.page({
