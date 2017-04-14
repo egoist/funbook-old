@@ -14,7 +14,7 @@ Chapter title
 Type: `string`<br>
 Default: Generated from `title`
 
-eg: title `Hello World` the id it `hello-world`
+eg: for title `Hello World` the id is `hello-world`
 
 #### content
 
