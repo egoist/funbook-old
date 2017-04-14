@@ -57,7 +57,8 @@
       "jest"
     ],
     "globals": [
-      "__IS_REAM__"
+      "__IS_REAM__",
+      "__BROWSER__"
     ],
     "rules": {
       "unicorn/filename-case": 0,
