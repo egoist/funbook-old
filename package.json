@@ -69,7 +69,6 @@
     }
   },
   "dependencies": {
-    "github-markdown-css": "^2.6.0",
     "nprogress": "^0.2.0",
     "vue": "^2.2.6",
     "vue-meta": "^0.5.6",
