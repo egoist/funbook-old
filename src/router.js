@@ -68,5 +68,19 @@ export default ({
   addPages(pages)
   addChapters(chapters)
 
+  if (typeof __BROWSER__ !== 'undefined' && __BROWSER__) {
+    const progress = require('nprogress')
+    require('./css/progress.styl')
+
+    router.beforeEach((to, from, next) => {
+      progress.start()
+      next()
+    })
+
+    router.afterEach(() => {
+      progress.done()
+    })
+  }
+
   return router
 }

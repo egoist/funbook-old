@@ -50,6 +50,6 @@ export default class Pen {
       app.$mount(root)
     })
 
-    return app
+    return { router, app }
   }
 }

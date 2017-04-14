@@ -53,7 +53,7 @@
 </script>
 
 <style src="github-markdown-css/github-markdown.css"></style>
-<style src="../css/markdown.css"></style>
+<style lang="stylus" src="../css/markdown.styl"></style>
 
 <style scoped lang="stylus">
   .main {
@@ -65,7 +65,7 @@
 
   .content {
     padding: 0 0 0 15px;
-    width: 100%;
+    width: calc(100% - 240px);
   }
 
   .content-header {
