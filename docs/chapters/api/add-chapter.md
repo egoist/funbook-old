@@ -21,3 +21,9 @@ eg: title `Hello World` the id it `hello-world`
 Type: `string` `object` `function`
 
 Chapter content.
+
+#### stories
+
+Type: `Array<Chapter>`
+
+An array which contains multiple stories (sub-chapter).
