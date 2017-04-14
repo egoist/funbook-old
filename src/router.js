@@ -12,7 +12,7 @@ Vue.use(Meta, {
 })
 
 export default ({
-  routerMode = 'hash',
+  routerMode = 'history',
   chapters = [],
   pages = [],
   config = {}

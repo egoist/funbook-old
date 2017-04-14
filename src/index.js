@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './components/App.vue'
 import createRouter from './router'
+import { slugify } from './utils'
 
 export default class Pen {
   constructor(config = {}) {
@@ -10,7 +11,10 @@ export default class Pen {
   }
 
   chapter(chapter) {
-    this.chapters.push(chapter)
+    this.chapters.push({
+      ...chapter,
+      id: chapter.id || slugify(chapter.title)
+    })
     return this
   }
 
@@ -29,17 +33,19 @@ export default class Pen {
       config: this.config
     })
 
+    if (typeof __IS_REAM__ !== 'undefined' && __IS_REAM__) {
+      return { router, App, meta: false, root }
+    }
+
     const app = new Vue({
       router,
       render: h => h(App)
     })
 
-    if (typeof IS_SERVER === 'undefined') {
-      router.onReady(() => {
-        app.$mount(root)
-      })
-    }
+    router.onReady(() => {
+      app.$mount(root)
+    })
 
-    return { app, router }
+    return app
   }
 }

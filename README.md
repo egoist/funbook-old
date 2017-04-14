@@ -5,10 +5,12 @@
 ## Install
 
 ```bash
-yarn global add funbook-cli 
+yarn add funbook
 # or
-npm i -g funbook-cli
+npm install --save funbook
 ```
+
+CDN: [JS](https://unpkg.com/funbook/dist/funbook.js) / [CSS](https://unpkg.com/funbook/dist/funbook.css)
 
 ## Support
 

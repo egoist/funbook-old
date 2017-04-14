@@ -1,5 +1,5 @@
 <template>
-  <div id="funbook-app">
+  <div id="root">
     <router-view />
   </div>
 </template>

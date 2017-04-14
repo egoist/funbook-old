@@ -55,7 +55,7 @@
 <style src="github-markdown-css/github-markdown.css"></style>
 <style src="../css/markdown.css"></style>
 
-<style scoped>
+<style scoped lang="stylus">
   .main {
     display: flex;
     max-width: 940px;
@@ -75,6 +75,6 @@
   .content-title {
     font-size: 1.7em;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.2;
   }
 </style>

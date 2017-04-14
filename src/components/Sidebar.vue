@@ -37,7 +37,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
   .sidebar {
     width: 240px;
     padding: 0 15px 0 0;

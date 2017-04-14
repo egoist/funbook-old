@@ -33,7 +33,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
   .site-header {
     padding: 50px 10px;
     margin: 0 auto;
@@ -72,7 +72,7 @@
   }
 </style>
 
-<style scoped>
+<style scoped lang="stylus">
   @media screen and (max-width: 768px) {
     .site-header {
       flex-direction: column;
