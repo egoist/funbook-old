@@ -1,2 +1,0 @@
-webpackJsonp([6],{58:function(e,o){e.exports={date:"2017-04-14T10:41:18.000Z",content:"<h2>book.chapter(chapter)</h2>\n<h3>chapter</h3>\n<h4>title</h4>\n<p>Type: <code>string</code><br>\nRequired: <code>true</code></p>\n<p>Chapter title</p>\n<h4>id</h4>\n<p>Type: <code>string</code><br>\nDefault: Generated from <code>title</code></p>\n<p>eg: title <code>Hello World</code> the id it <code>hello-world</code></p>\n<h4>content</h4>\n<p>Type: <code>string</code> <code>object</code> <code>function</code></p>\n<p>Chapter content.</p>\n"}}});
-//# sourceMappingURL=6.f72355c2.js.map
