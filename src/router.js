@@ -1,15 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Meta from 'vue-meta'
 import Page from './components/Page.vue'
 
 Vue.use(Router)
-Vue.use(Meta, {
-  keyName: 'head',
-  attribute: 'data-fun-head',
-  ssrAttribute: 'data-fun-ssr-attr',
-  tagIDKeyName: 'fhid'
-})
 
 export default ({
   routerMode = 'history',

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './components/App.vue'
-import createRouter from './router'
+import createRouterFactory from './router'
 import { getChapterSlug } from './utils'
 
 export default class FunBook {
@@ -30,16 +30,28 @@ export default class FunBook {
   open(root = '#root', {
     routerMode
   } = {}) {
-    const router = createRouter({
+    const routerOptions = {
       routerMode,
       chapters: this.chapters,
       pages: this.pages,
       config: this.config
-    })
+    }
 
     if (typeof __IS_REAM__ !== 'undefined' && __IS_REAM__) {
-      return { router, App, meta: false, root }
+      return {
+        createRouter: () => createRouterFactory(routerOptions),
+        App,
+        root,
+        meta: {
+          keyName: 'head',
+          attribute: 'data-fun-head',
+          ssrAttribute: 'data-fun-ssr-attr',
+          tagIDKeyName: 'fhid'
+        }
+      }
     }
+
+    const router = createRouterFactory(routerOptions)
 
     const app = new Vue({
       router,

@@ -16,16 +16,16 @@
     "test": "npm run lint",
     "lint": "xo",
     "prepublish": "npm run build",
-    "dev": "vbuild example/index.js -d",
+    "dev": "ream dev",
     "build": "npm run build:umd && npm run build:cjs",
-    "build:umd": "vbuild --format umd --module-name FunBook",
-    "build:cjs": "vbuild --format cjs --dist dist/cjs --no-minimize && npm run clean:css",
+    "build:umd": "poi build --format umd --module-name FunBook",
+    "build:cjs": "poi build --format cjs --dist dist/cjs --no-minimize && npm run clean:css",
     "clean:css": "rm -rf dist/cjs/*.css*",
     "build:docs": "ream generate",
     "surge": "npm run build:docs && surge -p docs/.ream/dist -d funbook.surge.sh",
     "deploy": "npm run build:docs && gh-pages -d docs/.ream/dist"
   },
-  "vbuild": {
+  "poi": {
     "entry": "src/index.js",
     "filename": {
       "css": "funbook.css",
@@ -41,12 +41,12 @@
     "gh-pages": "^0.12.0",
     "glob": "^7.1.1",
     "jest-cli": "^19.0.2",
+    "poi": "^8.0.8",
     "post-loader": "^1.1.2",
     "prismjs": "^1.6.0",
-    "ream": "beta",
+    "ream": "^1.0.0-rc.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vbuild": "^6.24.16",
     "xo": "^0.18.1"
   },
   "xo": {
@@ -70,8 +70,7 @@
   },
   "dependencies": {
     "nprogress": "^0.2.0",
-    "vue": "^2.2.6",
-    "vue-meta": "^0.5.6",
-    "vue-router": "^2.4.0"
+    "vue": "^2.3.3",
+    "vue-router": "^2.5.3"
   }
 }

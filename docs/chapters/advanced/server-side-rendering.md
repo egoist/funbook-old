@@ -3,12 +3,12 @@ Vue supports server-side rendering seamlessly and FunBook uses Vue under the hoo
 The simplest solution to use Vue SSR so far is using [Ream](https://github.com/ream/ream), basically you  only need to export a vue-router instance in your entry file and it's all set:
 
 ```js
-import router from './my-vue-router'
+import createRouter from './my-vue-router'
 
-export default { router }
+export default { createRouter }
 ```
 
-Similarly, when you're using Ream with FunBook, just export `book.open()`, FunBook will automatically return `router` and other necessary data in this method:
+Similarly, when you're using Ream with FunBook, just export `book.open()`, FunBook will automatically return `createRouter` and other necessary data in this method:
 
 ```js
 // src/index.js
