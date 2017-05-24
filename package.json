@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "nprogress": "^0.2.0",
+    "object-assign": "^4.1.1",
     "vue": "^2.3.3",
     "vue-router": "^2.5.3"
   }

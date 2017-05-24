@@ -1,3 +1,5 @@
+import './polyfills'
+
 import Vue from 'vue'
 import App from './components/App.vue'
 import createRouterFactory from './router'
